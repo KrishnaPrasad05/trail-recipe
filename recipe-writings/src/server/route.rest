@@ -1,0 +1,51 @@
+POST http://localhost:5000/api/recipe
+Content-Type: application/json
+
+{
+  "recipeName": "Sample",
+  "recipePicture": "a",
+  "postedBy": "a",
+  "recipeDescription": "a",
+  "preparationTime": "a",
+  "cookingTime": "a",
+  "servings": "a",
+  "ingredients": [
+    "a",
+    "a",
+    "a"
+  ],
+  "directions": [
+    "a",
+    "a",
+    "a"
+  ],
+  "youtubeLink": "a",
+  "recipeType": "Indian Curries",
+  "email":"sample@gmail.com"
+}
+
+###
+POST http://localhost:5000/api/recipe/667fbc7959b1f1a09568b5eb/comment
+Content-Type: application/json
+
+{
+    "userName": "kumar",
+    "comment": "good"
+}
+
+###
+GET http://localhost:5000/api/recipe/667fbc7959b1f1a09568b5eb/comment
+
+###
+POST http://localhost:5000/api/contactus
+Content-Type: application/json
+
+{
+  "contactName": "kumar",
+  "contactEmail": "kumar@gmail.com",
+  "contactContent": "Extend recipe description"
+}
+
+###
+DELETE  http://localhost:5000/api/user/668977c9c5bc0a351fda7d66
+

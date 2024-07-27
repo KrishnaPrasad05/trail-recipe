@@ -1,0 +1,117 @@
+.recipe-card{
+  background-color: #F5E6A7;
+}
+
+.recipe-card:hover {
+  background-color: #F0DE97;
+  transform: scale(1.01);
+  box-shadow: 2px 2px 7px black;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#formBg:focus{
+  background-color:#F5E6A7;
+  
+}
+#formBg{
+  background-color: #F0DE97;
+  border: 1px solid #390F0F;
+  box-shadow: none;
+}
+
+
+.custom-switch .form-check-input {
+  background-color: #F0DE97 !important;
+  border-color: #390F0F !important;
+}
+
+.custom-switch .form-check-input:checked {
+  background-color: #F5E6A7 !important;
+  border-color: #390F0F !important; 
+}
+
+.custom-header{
+  background-color: #390F0F !important;
+  color: #F5E6A7 !important;
+}
+.custom-text{
+  
+  color: #F5E6A7 !important;
+}
+
+
+.scrollable-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .scrollable-card-group {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .card-item {
+    flex: 0 0 auto;
+    margin-right: 50px;
+    width: 16rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #F5E6A7;
+  }
+  
+  .card-item:hover {
+    transform: scale(1.01);
+    background-color: #F0DE97;
+  }
+  
+  .card-item:last-child {
+    margin-right: 0;
+  }
+  
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .scrollable-container::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+  
+  .scrollable-container::-webkit-scrollbar-track {
+    background: #F0DE97; /* Track color */
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 8px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #541616; /* Thumb color */
+    border-radius: 10px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb:hover {
+    background-color: #390F0F; /* Thumb color on hover */
+  }
+  
+  .scrollable-container::-webkit-scrollbar-button {
+    display: none; /* Hide scrollbar buttons */
+  }
