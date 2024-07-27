@@ -1,25 +1,24 @@
 {
-    "version": 2,
-    "functions": {
+  "version": 2,
+  "functions": {
     "api/**/*.js": {
       "maxDuration": 60
     }
   },
-    "builds": [
-      {
-        "src": "server.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/server.js"
-      }
-    ],
-    "env": {
-      "MONGODB_URI": "mongodb+srv://krishnaprasad:Baby@2018@recipe.ljtsgow.mongodb.net/recipeBook?retryWrites=true&w=majority&appName=recipe",
-      "JWT_SECRET": "your_super_secret_key"
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://krishnaprasad:Baby%402018@recipe.ljtsgow.mongodb.net/recipeBook?retryWrites=true&w=majority&appName=recipe",
+    "JWT_SECRET": "your_super_secret_key"
   }
-  
+}
