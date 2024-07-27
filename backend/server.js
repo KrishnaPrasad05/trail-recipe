@@ -25,11 +25,11 @@ app.use('/api/contactus', contactusRoutes);
 app.use('/api/users', userRoutes);
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../frontend/recipe-writings/build')));
+app.use(express.static(path.join(__dirname, '../recipe-writings/build')));
 
 // Serve the React app for all other routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/recipe-writings/build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../recipe-writings/build', 'index.html'));
 });
 
 console.log('MongoDB URI:', process.env.MONGO_URI);
