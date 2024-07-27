@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "functions": {
-    "api/**/*.js": {
-      "maxDuration": 60,
-      "memory": 512 
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1.js"
+      "dest": "/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/recipe-writings/build/$1"
     }
   ],
   "env": {
